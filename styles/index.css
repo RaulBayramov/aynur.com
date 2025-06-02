@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  padding: 5px 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  gap: 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+header .logo {
+  height: auto;
+  width: auto;
+  flex: 15%;
+  cursor: pointer;
+}
+header .logo img {
+  height: 48px;
+  width: auto;
+  cursor: pointer;
+}
+header .search_bar_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 55%;
+  position: relative;
+}
+header .search_bar_container input {
+  width: 100%;
+  height: 48px;
+  border: solid 1px #aab2c8;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+header .search_bar_container input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+header .search_bar_container i {
+  font-size: 24px;
+  color: rgba(18, 18, 18, 0.5);
+  width: auto;
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+header .icons {
+  font-size: 32px;
+  color: #1a1f36;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  flex: 15%;
+  gap: 10%;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+header .icons i {
+  width: auto;
+  cursor: pointer;
+}
+
+.mobile-header {
+  display: flex;
+  justify-content: unset;
+  column-gap: 0px;
+}
+.mobile-header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-header .icons #wishlist_icon {
+  display: none;
+}
+
+.mobile-header .icons #user_icon {
+  display: none;
+}
+.mobile-menu {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  position: absolute;
+  z-index: 1000;
+  top: 66px;
+  left: 2px;
+  background-color: white;
+  padding: 8px 16px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25), -2px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.mobile-menu li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-menu div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 3%;
+}
+.mobile-menu i {
+  font-size: 24px;
+  cursor: pointer;
+}
+.mobile-menu .enroll {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.mobile-menu .enroll button {
+  height: 2.5rem;
+  width: 49%;
+  max-width: 9rem;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  line-height: 19px;
+  border-radius: 5px;
+  padding: 12px 1.5rem;
+  display: flex;
+  align-items: center; /* Dikey ortala */
+  justify-content: center; /* Yatay ortala */
+}
+.mobile-menu .enroll .sign-up {
+  background-color: white;
+  border: 3px solid #1a1f36;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+}
+.mobile-menu .enroll .sign-in {
+  background-color: #1a1f36;
+  border: 3px solid #1a1f36;
+  color: white;
+  font-weight: bold;
+}
+.mobile-menu i::before {
+  content: icon;
+}
+@media (min-width: 769px) {
+  header .hamburger_menu {
+    display: none;
+  }
+  header .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 56px;
+    gap: 0px;
+    overflow: hidden;
+    padding: 0, 10px;
+    font-family: Poppins, sans-serif;
+  }
+  header .hamburger_menu {
+    flex: 33.33%;
+  }
+  header .hamburger_menu i {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  header .logo {
+    height: 56px;
+    flex: 33.33%;
+  }
+  header .logo img {
+    height: 33.6px;
+  }
+  header .search_bar_container {
+    display: none;
+  }
+  header .icons {
+    flex: 33.33%;
+    gap: 10%;
+    color: #1a1f36;
+  }
+  header .icons i {
+    font-size: 24px;
+  }
+}
