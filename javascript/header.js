@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </li>
           <li class="news">
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke-width="2.5" stroke="#CACBD2" fill="none" class="duration-300 transform transition-all" style="width: 48px; height: 48px;">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
               <path d="M30 52.16c.81-2.07 7.06-17 19.76-19.86a.09.09 0 000-.18c-2.14-.86-15.22-6.57-19.38-20.26a.09.09 0 00-.18 0c-.51 2.27-3.94 14.43-20 20a.1.1 0 000 .19c2.24.38 13.48 3.14 19.62 20.15a.1.1 0 00.18-.04zM48.79 25.08c.29-.74 2.52-6.07 7.06-7.09v-.07c-.76-.3-5.43-2.34-6.92-7.23h-.07c-.18.82-1.4 5.16-7.14 7.13v.07c.8.14 4.81 1.12 7 7.2l.07-.01z"></path>
               </svg>
               <p>News</p>
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           <li class="wishlist">
             <div>
-              <i class="bi bi-heart"></i>
+              <i class="fa-regular fa-heart"></i>
               <p>Wishlist</p>
             </div>
             <i class="bi bi-chevron-right"></i>
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
           <li class="support">
             <div>
-              <i class="bi bi-chat-dots"></i>
+              <i class="fa-regular fa-envelope"></i>
               <p>Support</p>
             </div>
             <i class="bi bi-chevron-right"></i>
@@ -85,6 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const heroImage = document.querySelector(".hero_image");
       const heroText = document.querySelector(".hero_text");
       hero.insertBefore(heroImage, heroText);
+      // for chevrons
+      const [leftChevron, rightChevron] = hero.querySelectorAll("i");
+      const heroImageHeight = heroImage.offsetHeight;
+      leftChevron.style.top = heroImageHeight / 2 + "px";
+      rightChevron.style.top = heroImageHeight / 2 + "px";
     } else {
       hero.innerHTML = originalHero;
     }

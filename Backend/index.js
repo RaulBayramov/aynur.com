@@ -7,8 +7,12 @@ const server = http.createServer((req, res) => {
 
   if (req.url === "/") {
     filePath = path.join(__dirname, "../HTML/index.html");
+  } else if (req.url === "/styles/variables.css") {
+    filePath = path.join(__dirname, "../styles/variables.css");
   } else if (req.url === "/styles/index.css") {
     filePath = path.join(__dirname, "../styles/index.css");
+  } else if (req.url === "/styles/general_styles.css") {
+    filePath = path.join(__dirname, "../styles/general_styles.css");
   } else if (req.url === "/styles/hero.css") {
     filePath = path.join(__dirname, "../styles/hero.css");
   } else if (req.url === "/javascript/header.js") {

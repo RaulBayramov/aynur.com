@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background-color: white;
   padding: 5px 20px;
@@ -13,7 +8,7 @@ header {
   flex-direction: row;
   margin-bottom: 2rem;
   gap: 20px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px var(--black-25);
 }
 header .logo {
   height: auto;
@@ -37,17 +32,17 @@ header .search_bar_container {
 header .search_bar_container input {
   width: 100%;
   height: 48px;
-  border: solid 1px #aab2c8;
+  border: 1px solid var(--thirty-color);
   border-radius: 5px;
   padding-left: 1rem;
 }
 header .search_bar_container input:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px var(--black-25);
 }
 header .search_bar_container i {
   font-size: 24px;
-  color: rgba(18, 18, 18, 0.5);
+  color: var(--black-50);
   width: auto;
   position: absolute;
   top: 12px;
@@ -58,7 +53,7 @@ header .search_bar_container i {
 
 header .icons {
   font-size: 32px;
-  color: #1a1f36;
+  color: var(--primary-color);
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -91,18 +86,18 @@ header .icons i {
   display: none;
 }
 .mobile-menu {
-  width: 50%;
+  width: 60%;
   height: fit-content;
   display: flex;
   flex-direction: column;
-  column-gap: 10px;
+  column-gap: 1rem;
   position: absolute;
   z-index: 1000;
   top: 66px;
   left: 2px;
   background-color: white;
   padding: 8px 16px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25), -2px 0px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25), -2px 0px 2px var(--black-25);
 }
 .mobile-menu li {
   display: flex;
@@ -119,34 +114,35 @@ header .icons i {
 .mobile-menu i {
   font-size: 24px;
   cursor: pointer;
+  padding-right: 0.5rem;
 }
 .mobile-menu .enroll {
   flex-direction: row;
   justify-content: flex-start;
-  gap: 4px;
+  gap: 0.25rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
 }
 .mobile-menu .enroll button {
   height: 2.5rem;
   width: 49%;
-  max-width: 9rem;
-  font-size: 1rem;
+  max-width: 10rem;
   font-family: Poppins, sans-serif;
-  line-height: 19px;
   border-radius: 5px;
-  padding: 12px 1.5rem;
+  padding: 0.5rem 1rem;
   display: flex;
   align-items: center; /* Dikey ortala */
   justify-content: center; /* Yatay ortala */
 }
 .mobile-menu .enroll .sign-up {
   background-color: white;
-  border: 3px solid #1a1f36;
-  color: rgba(0, 0, 0, 0.75);
+  border: 3px solid var(--primary-color);
+  color: var(--black-75);
   font-weight: bold;
 }
 .mobile-menu .enroll .sign-in {
-  background-color: #1a1f36;
-  border: 3px solid #1a1f36;
+  background-color: var(--primary-color);
+  border: 3px solid var(--primary-color);
   color: white;
   font-weight: bold;
 }
@@ -192,7 +188,7 @@ header .icons i {
   header .icons {
     flex: 33.33%;
     gap: 10%;
-    color: #1a1f36;
+    color: var(--primary-color);
   }
   header .icons i {
     font-size: 24px;
