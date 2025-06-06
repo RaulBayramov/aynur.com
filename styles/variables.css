@@ -23,6 +23,8 @@
 }
 
 :root {
-  --font-family-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --font-family-heading: "Roboto Slab", serif;
+  --font-family-base: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  --font-family-heading: "Poppins", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
 }

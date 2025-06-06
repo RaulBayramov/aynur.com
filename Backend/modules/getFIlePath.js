@@ -7,7 +7,7 @@ export function getFilePath(url) {
     "/styles/general_styles.css": "../styles/general_styles.css",
     "/styles/hero.css": "../styles/hero.css",
     "/javascript/header.js": "../javascript/header.js",
-    "/images/logo.png": "../images/logo.png",
+    "/images/logo-modern.svg": "../images/logo-modern.svg",
     "/images/hero/2681.jpeg": "../images/hero/2681.jpeg",
     "/images/Categories/cookware.jpg": "../images/Categories/cookware.jpg",
     "/images/Categories/utensils.jpg": "../images/Categories/utensils.jpg",

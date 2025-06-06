@@ -15,16 +15,77 @@ header .logo {
   width: auto;
   flex: 15%;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
-header .logo:hover {
+header .logo-content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(26, 31, 54, 0.08);
+  border: 1px solid rgba(26, 31, 54, 0.08);
+}
+header .logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: var(--gradient-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+header .logo-icon i {
+  font-size: 1.25rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+header .logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+header .logo-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 0.3px;
+}
+header .logo-tagline {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  letter-spacing: 0.2px;
+}
+header .logo:hover .logo-content {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 31, 54, 0.12);
+  border-color: rgba(26, 31, 54, 0.12);
+}
+header .logo:hover .logo-icon {
   transform: scale(1.05);
 }
 header .logo img {
-  height: 48px;
+  height: 40px;
   width: auto;
   cursor: pointer;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
+}
+header .logo-main {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+header .logo-sub {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--secondary-color);
 }
 header .search_bar_container {
   display: flex;
@@ -295,9 +356,28 @@ header .hamburger_menu:hover i {
   header .logo {
     height: 56px;
     flex: 33.33%;
+    padding: 4px;
+    gap: 8px;
   }
   header .logo img {
-    height: 33.6px;
+    height: 32px;
+  }
+  header .logo-content {
+    padding: 8px 12px;
+    gap: 10px;
+  }
+  header .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  header .logo-icon i {
+    font-size: 1.1rem;
+  }
+  header .logo-name {
+    font-size: 1.1rem;
+  }
+  header .logo-tagline {
+    font-size: 0.7rem;
   }
   header .search_bar_container {
     display: none;
