@@ -3,6 +3,8 @@ body {
   font-size: var(--body);
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  min-height: 100vh;
 }
 
 h1,
@@ -37,4 +39,7 @@ h1 {
 p {
   font-size: var(--small);
   line-height: 1.25; /* 17.5px */
+}
+
+@media screen and (max-width: 768px) {
 }
