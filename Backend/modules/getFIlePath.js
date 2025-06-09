@@ -3,10 +3,12 @@ export function getFilePath(url) {
   const routes = {
     "/": "../HTML/index.html",
     "/styles/variables.css": "../styles/variables.css",
-    "/styles/index.css": "../styles/index.css",
+    "/styles/header.css": "../styles/header.css",
     "/styles/general_styles.css": "../styles/general_styles.css",
     "/styles/hero.css": "../styles/hero.css",
     "/javascript/header.js": "../javascript/header.js",
+    "/javascript/hero.js": "../javascript/hero.js",
+    "/javascript/data/products.js": "../javascript/data/products.js",
     "/images/logo-modern.svg": "../images/logo-modern.svg",
     "/images/hero/2681.jpeg": "../images/hero/2681.jpeg",
     "/images/Categories/cookware.jpg": "../images/Categories/cookware.jpg",
